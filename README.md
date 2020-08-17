@@ -1,5 +1,5 @@
 # Documentor
-System for auto-documenting code wrote on C language.  
+System for auto-documenting a code wrote on C language.  
 The result the programm work is two files documentation - HTML and CSS.  
 Simple,easy-editable result is the main advantage of the program.  
 
