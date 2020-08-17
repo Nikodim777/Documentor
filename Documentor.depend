@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1597493194 source:c:\users\ÿ\documents\myprojects\documentor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<wchar.h>
+	<windows.h>
+
