@@ -1,0 +1,87 @@
+﻿body{
+	background: SkyBlue
+}
+nav > li > div > a,h2,h3,h4{
+	text-align: center;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-between;
+}
+nav > li{
+	display: block;
+	width: 20%;
+	background: Coral;
+	cursor: pointer;
+}
+nav > li:not(:last-child) > h4{
+	border-width: 0px medium 0px 0px;
+	border-style: groove;
+	border-color: LightSalmon;
+}
+nav > li > div{
+	display: none;
+}
+nav > li > div > a , nav > li > div > a:active{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+nav > li > div > a:hover{
+	background: Chocolate;
+	text-decoration: underline;
+}
+hr{
+	background: DarkCyan;
+	border-style: none;
+	border-radius: 3px;
+}
+hr.type-sep{
+	height: 3px;
+}
+hr.module-sep{
+	height: 7px;
+}
+main > a,main > p,main > table{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+span{
+	color: Maroon;
+	font-weight: bold;
+}
+table{
+	border: 3px solid Chocolate;
+	border-spacing: 0px;
+}
+tr:nth-child(2n){
+	background: Green;
+}
+tr:nth-child(2n+1){
+	background: Lime;
+}
+td:not(:last-child){
+	border-width: 0px 2px 0px 0px;
+	border-style: solid;
+	border-color: Chocolate;
+}
+@media (max-width: 800px){
+	nav{
+		flex-direction: column;
+		align-items: center;
+	}
+	nav > li{
+		width: 40%;
+	}
+	nav > li:not(:last-child){
+		border-width: 0px 0px medium 0px;
+		border-style: groove;
+		border-color: LightSalmon;
+	}
+	nav > li:not(:last-child) > h4{
+		border-style: none;
+	}
+}

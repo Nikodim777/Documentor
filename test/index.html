@@ -1,0 +1,474 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>example</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<a name="nav"></a>
+		<nav>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Модули</h4>
+				<div>
+					<a href="#test.h">test.h</a>
+					<a href="#test2.h">test2.h</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Функции</h4>
+				<div>
+					<a href="#aprint">aprint</a>
+					<a href="#Appropriate">Appropriate</a>
+					<a href="#moneyprint">moneyprint</a>
+					<a href="#Sum">Sum</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Группы функций</h4>
+				<div>
+					<a href="#printFuncs">printFuncs</a>
+					<a href="#fillFuncs">fillFuncs</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Переменные</h4>
+				<div>
+					<a href="#largeSize_tp">largeSize_tp</a>
+					<a href="#venture">venture</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Структуры</h4>
+				<div>
+					<a href="#fighter">fighter</a>
+					<a href="#anyman">anyman</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Перечисления</h4>
+				<div>
+					<a href="#checkRes">checkRes</a>
+					<a href="#typeAppr">typeAppr</a>
+					<a href="#currency">currency</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Объединения</h4>
+				<div>
+					<a href="#magic">magic</a>
+					<a href="#foo">foo</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Макросы</h4>
+				<div>
+					<a href="#MAXSIZE">MAXSIZE</a>
+					<a href="#MINSIZE">MINSIZE</a>
+				</div>
+			</li>
+			<li onmouseover="this.getElementsByTagName('DIV')[0].style.display = 'block'" onmouseout="this.getElementsByTagName('DIV')[0].style.display = 'none'">
+				<h4>Группы макросов</h4>
+				<div>
+					<a href="#printMacro">printMacro</a>
+				</div>
+			</li>
+		</nav>
+		<main>
+			<h2>test.h</h2>
+			<p>
+				    f - означает работу с типом float.<br>
+				    d - означает работу с типом double.<br>
+				    e - означает работу с типом double в экспоненциальном виде.<br>
+				    c - означает работу с типом complex.<br>
+				    d - означает работу с либой структурой данных.
+			</p>
+
+
+			<hr class="type-sep">
+			<h3>Функции модуля</h3>
+			<a name="aprint" href="#nav">Назад</a>
+			<h4>aprint</h4>
+			<p>
+				    Функция предназначена для форматированного вывода одномерного или двумерного массива.
+			</p>
+			<p>Аргументы:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>title</td><td>Указатель на строку заголовка печатаемого массива.</td>
+					</tr>
+					<tr>
+						<td>print</td><td>Указатель на функцию печатающую элемент определённого типа.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a name="Appropriate" href="#nav">Назад</a>
+			<h4>Appropriate</h4>
+			<p>
+				    Функция принимает в качестве параметров указатель на элемент массива
+				    и возвращает RES_NOT в случае несоответствия и RES_OK в случае соответствия.
+			</p>
+			<p>Аргументы:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>type</td><td>Тип соответствия.</td>
+					</tr>
+					<tr>
+						<td>checkEl</td><td>Указатель на функцию проверки соответствия элемента массива определённому условию.</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Результат: Возвращает или признак соответствия/несоответствия или число соответствующих элементов в зависимости от типа соответствия</p>
+
+
+			<hr class="type-sep">
+			<h3>Группы функций модуля</h3>
+			<a name="printFuncs" href="#nav">Назад</a>
+			<h4>printFuncs</h4>
+			<p>
+				    Функции служат для вывода значений базовых типов.<br>
+				    Можно создать аналогичные собзственные функции для вывода значений любого типа.<br>
+				    Пример_функции_вывода_элемента<br>
+				    void printDbl(const void *arg)<br>
+				    {<br>
+				        printf("%.6f\t", *(double*)arg);<br>
+				    }<br>
+			</p>
+			<p>Аргументы:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>arg</td><td>Указатель на значение которое нужно вывести.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>Список функций:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>void printInt(const void *arg)</td><td></td>
+					</tr>
+					<tr>
+						<td>void printFlt(const void *arg)</td><td></td>
+					</tr>
+					<tr>
+						<td>void printDbl(const void *arg)</td><td></td>
+					</tr>
+					<tr>
+						<td>void printExp(const void *arg)</td><td></td>
+					</tr>
+					<tr>
+						<td>void printCmplx(const void *arg)</td><td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a name="fillFuncs" href="#nav">Назад</a>
+			<h4>fillFuncs</h4>
+			<p>
+				    Функции служат для заполнения массива обределённым образом.<br>
+				    step - заполняет целыми числами по порядку.<br>
+				    stepTwc - то же но с двойным шагом.<br>
+				    Функции с суффиксом Rnd - заполняют случайными числами.
+				    Можно создать аналогичные собственные функции.
+				    Пример_функции_изменения_элемента
+				    void setRnd(void* masEl, largeSize_tp num)<br>
+				    {<br>
+				        *(int*)masEl = rand() % 100;<br>
+				    }
+			</p>
+			<p>Аргументы:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>masEl</td><td>Указатель на элемент массива значение которого нужно изменить.</td>
+					</tr>
+					<tr>
+						<td>num</td><td>Порядковый номер элемента.</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Результат: Ничего не возвращает</p>
+			<p>Список функций:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>void step(void* masEl, largeSize_tp num)</td><td></td>
+					</tr>
+					<tr>
+						<td>void stepTwc(void* masEl, largeSize_tp num)</td><td></td>
+					</tr>
+					<tr>
+						<td>void setRnd(void* masEl, largeSize_tp num)</td><td></td>
+					</tr>
+					<tr>
+						<td>void setDblRnd(void* masEl, largeSize_tp num)</td><td></td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Переменные модуля</h3>
+			<a name="largeSize_tp" href="#nav">Назад</a>
+			<h4>largeSize_tp</h4>
+			<p>
+				    Беззнаковый тип для задания очень больших размеров
+			</p>
+
+
+			<hr class="type-sep">
+			<h3>Структуры модуля</h3>
+			<a name="fighter" href="#nav">Назад</a>
+			<h4>fighter</h4>
+			<p>
+				    Структура хранящяя инфу о юните
+			</p>
+			<p>Члены структуры:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>    char name[25]</td><td> Имя </td>
+					</tr>
+					<tr>
+						<td>    int life</td><td> Жизнь </td>
+					</tr>
+					<tr>
+						<td>    float damage</td><td> Урон </td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Перечисления модуля</h3>
+			<a name="checkRes" href="#nav">Назад</a>
+			<h4>checkRes</h4>
+			<p>
+				    Перечисление хранящее результат соответствия элементов массива некоторому условию
+			</p>
+			<p>Константы перечисления:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>RES_OK</td><td> Соответствует </td>
+					</tr>
+					<tr>
+						<td>RES_NOT</td><td> Не соответствует </td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a name="typeAppr" href="#nav">Назад</a>
+			<h4>typeAppr</h4>
+			<p>
+				    Перечисление хранящее тип соответствия элементов массива некоторому условию
+			</p>
+			<p>Константы перечисления:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>ALL_APPR</td><td> Все элементы соответствуют </td>
+					</tr>
+					<tr>
+						<td>ANY_APPR</td><td> Хотя бы один элемент соответствуют </td>
+					</tr>
+					<tr>
+						<td>CNT_APPR</td><td> Определённое число элементов соответствуют </td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Объединения модуля</h3>
+			<a name="magic" href="#nav">Назад</a>
+			<h4>magic</h4>
+			<p>
+				    Объединение хранящее представление числа в виде тетрады символов
+			</p>
+			<p>Члены объединения:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>    char str[4]</td><td> Число в виде строки </td>
+					</tr>
+					<tr>
+						<td>    int num</td><td> Число </td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Группы макросов модуля</h3>
+			<a name="printMacro" href="#nav">Назад</a>
+			<h4>printMacro</h4>
+			<p>
+				    Макросы для печати массива определённого типа
+			</p>
+			<p>Список макросов:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>aprinti(mas,size1,size2,title)</td><td>aprint((mas),sizeof(int),(size1),(size2),(title),printInt);</td>
+					</tr>
+					<tr>
+						<td>aprintf(mas,size1,size2,title)</td><td>aprint((mas),sizeof(float),(size1),(size2),(title),printFlt);</td>
+					</tr>
+					<tr>
+						<td>aprintd(mas,size1,size2,title)</td><td>aprint((mas),sizeof(double),(size1),(size2),(title),printDbl);</td>
+					</tr>
+					<tr>
+						<td>aprinte(mas,size1,size2,title)</td><td>aprint((mas),sizeof(double),(size1),(size2),(title),printExp);</td>
+					</tr>
+					<tr>
+						<td>aprintc(mas,size1,size2,title)</td><td>aprint((mas),sizeof(double complex),(size1),(size2),(title),printCmplx);</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+			<hr class="module-sep">
+
+
+
+			<a name="test2.h" href="#nav">Назад</a>
+			<h2>test2.h</h2>
+			<p>
+				    Вот это модуль №2<br>
+				    <span>Не играйте со спичками!</span>
+			</p>
+
+
+			<hr class="type-sep">
+			<h3>Функции модуля</h3>
+			<a name="moneyprint" href="#nav">Назад</a>
+			<h4>moneyprint</h4>
+			<p>
+				    Функция печатает деньги в указанной валюте в определённом количестве.
+			</p>
+			<p>Аргументы:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>value</td><td>Требуемое колво денег.</td>
+					</tr>
+					<tr>
+						<td>curr</td><td>Требуемая валюта.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<a name="Sum" href="#nav">Назад</a>
+			<h4>Sum</h4>
+			<p>
+				    Функция подсчитывает сумму элементов массива
+			<p>Результат: Сумма элементов массива</p>
+
+
+			<hr class="type-sep">
+			<h3>Переменные модуля</h3>
+			<a name="venture" href="#nav">Назад</a>
+			<h4>venture</h4>
+			<p>
+				    Имя компании
+			</p>
+
+
+			<hr class="type-sep">
+			<h3>Структуры модуля</h3>
+			<a name="anyman" href="#nav">Назад</a>
+			<h4>anyman</h4>
+			<p>
+				    Структура хранящяя инфу о мужике
+			</p>
+			<p>Члены структуры:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>    char name[25]</td><td> Имя </td>
+					</tr>
+					<tr>
+						<td>    int life</td><td> Жизнь </td>
+					</tr>
+					<tr>
+						<td>    float drunk</td><td> Выпито спирта в литрах </td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Перечисления модуля</h3>
+			<a name="currency" href="#nav">Назад</a>
+			<h4>currency</h4>
+			<p>
+				    Перечисление хранящее тип валюты
+			</p>
+			<p>Константы перечисления:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>ROUBLE</td><td> Рубль </td>
+					</tr>
+					<tr>
+						<td>DOLLAR</td><td> Доллар </td>
+					</tr>
+					<tr>
+						<td>EURO</td><td> Евро </td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Объединения модуля</h3>
+			<a name="foo" href="#nav">Назад</a>
+			<h4>foo</h4>
+			<p>
+				    Объединение хранящее представление числа в виде тетрады символов
+			</p>
+			<p>Члены объединения:</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>    char str[MAXSIZE]</td><td> Число в виде строки </td>
+					</tr>
+					<tr>
+						<td>    int num</td><td> Число </td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<hr class="type-sep">
+			<h3>Макросы модуля</h3>
+			<a name="MAXSIZE" href="#nav">Назад</a>
+			<h4>MAXSIZE</h4>
+			<p>
+				    Максимальный размер
+				<br>Значение: 4
+			</p>
+			<a name="MINSIZE" href="#nav">Назад</a>
+			<h4>MINSIZE</h4>
+			<p>
+				    Минимальный размер
+				<br>Значение: 2
+			</p>
+		</main>
+	</body>
+</html>
