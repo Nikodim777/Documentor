@@ -1,0 +1,17 @@
+﻿body{
+	background: SkyBlue
+}
+
+h1,h2,h3{
+	text-align: center;
+}
+
+h1,h2,h3,p,ol,dl{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+span{
+	color: Maroon;
+	font-weight: bold;
+}
