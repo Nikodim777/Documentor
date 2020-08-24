@@ -68,7 +68,7 @@ td:not(:last-child){
 	border-style: solid;
 	border-color: Chocolate;
 }
-@media (max-width: 800px){
+@media (max-width: 1200px){
 	nav{
 		flex-direction: column;
 		align-items: center;
