@@ -638,7 +638,7 @@ int main()
 \tborder-width: 0px 2px 0px 0px;\n\
 \tborder-style: solid;\n\
 \tborder-color: %s;\n}\n", colors[TABLEBORDER]);
-    fputws(L"@media (max-width: 800px){\n", cssFile);
+    fputws(L"@media (max-width: 1200px){\n", cssFile);
     fputws(L"\tnav{\n\
 \t\tflex-direction: column;\n\
 \t\talign-items: center;\n\t}\n", cssFile);
